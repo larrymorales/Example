@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AppCraft - Simple PRD Planner</title>
+    <meta name="description" content="A friendly, beginner-focused assistant that turns rough app ideas into detailed, developer-ready Product Requirements Documents (PRDs) with MVP scoping, wireframes, and AI builder prompts." />
+    <meta property="og:title" content="AppCraft - Simple PRD Planner" />
+    <meta property="og:description" content="A friendly, beginner-focused assistant that turns rough app ideas into detailed, developer-ready Product Requirements Documents (PRDs) with MVP scoping, wireframes, and AI builder prompts." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Ignore WebSocket disconnection errors in dev environment
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event.reason ? String(event.reason.message || event.reason) : '';
+        if (reason.indexOf('WebSocket') !== -1 || reason.indexOf('websocket') !== -1) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = event.message ? String(event.message) : '';
+        if (msg.indexOf('WebSocket') !== -1 || msg.indexOf('websocket') !== -1) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased font-sans selection:bg-amber-200 selection:text-amber-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

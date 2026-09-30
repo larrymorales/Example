@@ -1,0 +1,6 @@
+{
+  "name": "AppCraft - Simple PRD Planner",
+  "description": "A friendly, beginner-focused assistant that turns rough app ideas into detailed, developer-ready Product Requirements Documents (PRDs) with MVP scoping, wireframes, and AI builder prompts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
